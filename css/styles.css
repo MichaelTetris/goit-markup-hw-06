@@ -844,6 +844,7 @@ body {
   padding-left: 38px;
   color: var(--logo-main-color);
   background-color: transparent;
+  transition: border-color var(--transform-item-hover);
 }
 
 .modal-input::placeholder {
@@ -854,16 +855,26 @@ body {
   letter-spacing: 0.04em;
 }
 
+.modal-input:focus {
+  outline: none;
+  border-color: var(--logo-color-style);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--logo-color-style);
+}
+
 .input-icon {
   position: absolute;
   top: 25%;
   left: 18px;
   transform: translate();
+  transition: fill var(--transform-item-hover);
 }
 
 .contact-mod-mesage {
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   padding: 8px 16px;
   resize: none;
   border-radius: 4px;
@@ -872,7 +883,9 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  background-color: transparent;
   color: var(--logo-main-color);
+  transition: border-color var(--transform-item-hover);
 }
 
 .contact-mod-mesage::placeholder {
@@ -881,6 +894,11 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.contact-mod-mesage:focus {
+  outline: none;
+  border-color: var(--logo-color-style);
 }
 
 .policy-description {
