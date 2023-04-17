@@ -904,6 +904,31 @@ body {
 .policy-description {
 }
 
+.policy-description::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  transition: background-image var(--transform-item-hover);
+}
+
+.privacy-policy:checked + .policy-description::before {
+  background-color: var(--active-link-color);
+  background-image: url(../images/click-check-1.svg);
+  background-size: 10px 8px;
+  border: 1px solid #404BBF;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* .policy-description:checked + .privacy-policy {
+  background-color: #4d5ae5;
+} */
+
 .accept-descr {
   font-weight: 400;
   font-size: 12px;
