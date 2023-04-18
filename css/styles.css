@@ -83,7 +83,8 @@ body {
   overflow: hidden;
 }
 
-/*? --------HEADER-----------*/
+/*? ---------------HEADER----------------*/
+/*? -------------------------------------*/
 
 .header {
   max-width: 1440px;
@@ -123,6 +124,7 @@ body {
 }
 
 /**-------------navigation-------------**/
+/**------------------------------------**/
 
 .header-list {
   display: flex;
@@ -209,7 +211,8 @@ body {
   color: var(--active-link-color);
 }
 
-/*? --------HERO-----------*/
+/*? --------------HERO----------------*/
+/*? ----------------------------------*/
 
 .hero {
   height: 600px;
@@ -261,7 +264,8 @@ body {
   background-color: var(--active-link-color);
 }
 
-/*? --------BENEFITS-----------*/
+/*? ------------BENEFITS---------------*/
+/*? -----------------------------------*/
 
 .benefits {
   background: #fff;
@@ -288,7 +292,8 @@ body {
 .bnf-icon-pic {
 }
 
-.benefits-main-title {}
+.benefits-main-title {
+}
 
 .benefits-list {
   display: flex;
@@ -318,6 +323,8 @@ body {
 }
 
 /*?--------WHAT ARE WE DO IN------*/
+/*? ------------------------------*/
+
 .examples {
   padding-bottom: 120px;
 }
@@ -349,7 +356,8 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-/*? --------OUR TEAM-----------*/
+/*? --------------OUR TEAM-----------------*/
+/*? ---------------------------------------*/
 
 .team {
   background: #f4f4fd;
@@ -446,6 +454,7 @@ body {
 }
 
 /*? --------CUSTOMERS-----------*/
+/*? ----------------------------*/
 
 .customers {
   padding-top: 120px;
@@ -495,9 +504,11 @@ body {
   border-color: #404bbf;
 }
 
-/*! --------======PORTFOLIO========-----------*/
+/*? --------======PORTFOLIO========-----------*/
+/*! --------=======================-----------*/
 
-/*? --------FILTER-----------*/
+/*? -------------FILTER--------------*/
+/*? ---------------------------------*/
 
 .filter {
   background: #ffffff;
@@ -563,7 +574,8 @@ body {
   border: none;
 }
 
-/*? --------PROJECTS-----------*/
+/*? -----------PROJECTS--------------*/
+/*? ---------------------------------*/
 
 .project-list {
   display: flex;
@@ -647,7 +659,8 @@ body {
   color: var(--main-text-color);
 }
 
-/*? --------FOOTER-----------*/
+/*? -------------FOOTER--------------*/
+/*? ---------------------------------*/
 
 .footer {
   max-width: 1440px;
@@ -733,8 +746,82 @@ body {
   fill: #f4f4fd;
 }
 
-/*------------------BACKDROP---------------
--------------------------------------------*/
+/*? -----------FOOTEER-SUBSCRIBE-------------*/
+/*? -----------------------------------------*/
+
+.footer-subscribe {
+  margin-left: auto;
+}
+.subscribe-form {
+}
+.subscr-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.input-elements {
+  display: inline-flex;
+}
+
+.input-subscr {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-right: 24px;
+  padding: 8px 16px;
+  color: #ffffff;
+  transition: border-color var(--transform-item-hover) ;
+}
+
+.input-subscr:focus {
+  outline: none;
+  border-color: var(--logo-color-style);
+}
+
+.input-subscr::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(12 / 24);
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.subscr-btn {
+  background-color: var(--logo-color-style);
+  display: flex;
+  padding: 8px 24px;
+  align-items: center;
+  text-align: center;
+  transition: border-color var(--transform-item-hover);
+}
+
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: var(--active-link-color);
+  border: transparent;
+}
+
+.text-btn-sbscr {
+  text-align: center;
+  align-items: center;
+}
+
+.subscr-icon-pic {
+  margin-left: 16px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-title-color);
+}
+
+/**------------------BACKDROP-----------------**/
+/**-------------------------------------------**/
 
 .backdrop {
   position: fixed;
@@ -751,6 +838,8 @@ body {
   transform: translate(-50%, -50%) scale(0);
   box-shadow: none;
 }
+
+/*------------modal--------------*/
 
 .modal {
   width: 408px;
@@ -903,7 +992,7 @@ body {
   border-color: var(--logo-color-style);
 }
 
-.policy-description { 
+.policy-description {
   display: flex;
   align-items: center;
 }
@@ -924,15 +1013,10 @@ body {
   background-color: var(--active-link-color);
   background-image: url(../images/click-check-1.svg);
   background-size: 10px 8px;
-  border: 1px solid #404BBF;
+  border: 1px solid #404bbf;
   background-position: center;
   background-repeat: no-repeat;
-
 }
-
-/* .policy-description:checked + .privacy-policy {
-  background-color: #4d5ae5;
-} */
 
 .accept-descr {
   font-weight: 400;
@@ -942,20 +1026,22 @@ body {
   color: #8e8f99;
 }
 
+/*------------buton--------------*/
+
 .btn-form-modal {
   min-width: 169px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
-  
+
   background-color: var(--logo-color-style);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  
+
   transition: background-color var(--transform-item-hover);
 }
 
