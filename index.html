@@ -430,16 +430,24 @@
         </div>
         <div class="footer-subscribe">
           <form class="subscribe-form">
-            <p class="subscr-text">Subscribe</p>
-            <div class="input-elements"> 
-              <input type="email" class="input-subscr" placeholder="E-mail" />
-              <button type="submit" class="subscr-btn btn-size">
-                <span class="text-btn-sbscr">Subscribe</span>
-                <svg class="subscr-icon-pic" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <label>
+              <p class="subscr-text">Subscribe</p>
+              <span class="input-elements">
+                <input
+                  type="email"
+                  class="input-subscr"
+                  name="subscribe-email"
+                  placeholder="E-mail"
+                  required
+                />
+                <button type="submit" class="subscr-btn btn-size">
+                  <span class="text-btn-sbscr">Subscribe</span>
+                  <svg class="subscr-icon-pic" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </span>
+            </label>
           </form>
         </div>
       </div>
